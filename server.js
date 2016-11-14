@@ -1,4 +1,7 @@
-var express = require('express');
+var express = require('express'),
+    multer = require('multer');
+
+var upload = multer();
 
 var app = express();
 app.set('port', process.env.PORT ||  8080);
